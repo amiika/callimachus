@@ -58,17 +58,6 @@ import module namespace calli = "http://callimachusproject.org/rdf/2009/framewor
                                 <li>{calli:logout-href(<a data-localize="menu.sign-out">Sign out</a>)}</li>
                             </ul>
                         </div>
-                         <div class="btn-group">
-	                             <button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown">
-	                                <span class="glyphicon glyphicon-globe"></span>
-	                            </button>
-	                            <ul class="dropdown-menu" role="menu">
-	                    			<li class="dropdown-header" data-localize="menu.language">Language</li>
-	                                <li><a href="#" class="setLocale" data-locale="default" data-localize="lang.en">English</a></li>
-	                                <li><a href="#" class="setLocale" data-locale="fi" data-localize="lang.fi">Finnish</a></li>
-	                                <li><a href="#" class="setLocale" data-locale="fr" data-localize="lang.fr">French</a></li>
-	                           	</ul>
-	                    </div>
 	                   </div>
                     </div>
                 </div>

@@ -5,9 +5,9 @@
     xmlns:sparql="http://www.w3.org/2005/sparql-results#"
     exclude-result-prefixes="sparql">
 <head>
-    <title>
+    <title data-localize="discussion.title">
         <xsl:value-of select="sparql:sparql/sparql:results/sparql:result[1]/sparql:binding[@name='label']/*" />
-        <xsl:text> Discussion</xsl:text>
+        <xsl:text>Discussion</xsl:text>
     </title>
     <link rel="help" href="../../callimachus-for-web-developers#Discussion_tab" target="_blank" title="Help" />
     <style>
@@ -21,12 +21,12 @@
 <body>
     <div class="container">
         <hgroup class="page-header">
-            <h1>
+            <h1 data-localize="discussion.title">
                 <xsl:value-of select="sparql:sparql/sparql:results/sparql:result[1]/sparql:binding[@name='label']/*" />
                 <xsl:text> Discussion</xsl:text>
             </h1>
         </hgroup>
-        <p>The purpose of this forum is to provide space for editors to discuss changes to this resource, post reminders of editorial work still to be done, or warnings in the event that future changes to this resource that might be made. This should not be used by editors for their personal views on a subject.</p>
+        <p data-localize="discussion.purpose">The purpose of this forum is to provide space for editors to discuss changes to this resource, post reminders of editorial work still to be done, or warnings in the event that future changes to this resource that might be made. This should not be used by editors for their personal views on a subject.</p>
         <ul class="list-unstyled thread">
             <xsl:for-each select="sparql:sparql/sparql:results/sparql:result[sparql:binding/@name='note']">
                 <li class="note panel panel-primary">
@@ -51,7 +51,7 @@
             <li class="note hidden-logout panel panel-info">
                 <div class="panel-heading" >
                     <span class="glyphicon glyphicon-comment pull-left"></span>
-                    <h4 class="panel-title text-center">
+                    <h4 class="panel-title text-center" data-localize="discussion.post">
                         <xsl:text>Post a new note</xsl:text>
                     </h4>
                 </div>
@@ -61,9 +61,9 @@
                             <textarea class="form-control" name="note"></textarea>
                         </div>
                         <br />
-                        <button id="send" type="submit" class="btn btn-primary">Send</button>
+                        <button id="send" type="submit" class="btn btn-primary" data-localize="menu.send">Send</button>
                         <xsl:text> </xsl:text>
-                        <button id="cancel" type="button" onclick="window.location.replace('?discussion')" class="btn btn-default">Cancel</button>
+                        <button id="cancel" type="button" onclick="window.location.replace('?discussion')" class="btn btn-default" data-localize="menu.cancel">Cancel</button>
                     </form>
                 </div>
             </li>
